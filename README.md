@@ -88,3 +88,5 @@ Page({
 ...
 })
 ```
+
+**全文请详见[微信小程序图片压缩及base64化上传](https://xuweilu.github.io/weixin-mini-program-image-base64-uploader/)**
