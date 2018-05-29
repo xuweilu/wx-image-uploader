@@ -1,0 +1,10 @@
+<view class="section">
+  <view class="btn-area">
+    <button size="mini" bindtap="uploadImage">Upload Image</button>
+    <button size="mini" bindtap="processImage">Process Image</button>
+  </view>
+  <image class="img" bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" src="{{imgUrl}}"></image>
+  <canvas style="width: 300px; height: 200px;" canvas-id="myCanvas"></canvas>
+  <image src="{{base64}}"></image>
+  <canvas style="width:2px;height:2px;visibility:hidden;" canvas-id="judgeCanvas"></canvas>
+</view>
