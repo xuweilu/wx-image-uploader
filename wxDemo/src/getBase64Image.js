@@ -39,7 +39,7 @@ var getBase64Image = function (canvasId, imgUrl, callback, imgWidth, imgHeight) 
         }
         try {
           // png编码
-          var pngData = upng.zencode([result.data.buffer], result.width, result.height);
+          var pngData = upng.encode([result.data.buffer], result.width, result.height);
           // base64编码
           var base64 = wx.arrayBufferToBase64(pngData);
           var base64Data = 'data:image/png;base64,' + base64;
